@@ -1,5 +1,7 @@
 # 秒杀系统
 
+[![PHP Require Version](https://img.shields.io/badge/php-%3E%3D5.6-8892BF.svg)](https://secure.php.net/)
+
 ### 实现步骤
 1. 首先创建redis商品库存队列
 2. 客户端用户访问秒杀API接口
