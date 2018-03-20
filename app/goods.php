@@ -30,10 +30,10 @@ class goods extends common
      * 查看商品列表
      *
      */
-
     public function goodsLits()
     {
         $list = $this->_goodsModel->getGoodses();
+        
         $redis = $this->_redis;
         foreach ($list as $key => &$value) {
             $id = $value['id'];
@@ -48,7 +48,6 @@ class goods extends common
      * 设置商品库存
      *
      */
-
     public function setGoodsCount()
     {
 

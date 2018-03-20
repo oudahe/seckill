@@ -24,7 +24,8 @@ class QRedis
         if ($this->_redis === null) {
             try {
                 $redis = new Redis();
-                $hanedel = $redis->connect('127.0.0.1', 6379);
+                $redis->connect('10.1.70.49', 6379);
+                $hanedel = $redis->auth('MMcLIck2015');
                 if ($hanedel) {
                     $this->_redis = $redis;
                 } else {

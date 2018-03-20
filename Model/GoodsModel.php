@@ -8,8 +8,6 @@ class GoodsModel extends Model
 {
     /*
      * 获取商品信息
-     *
-     *
      */
 
     public function getGoods($id)
